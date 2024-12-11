@@ -1,0 +1,10 @@
+$font-stack:    "TTLakes", serif;
+$primary-color:#1B1C21;
+$body-col: #F8F8F8;
+
+body{
+  font-family: $font-stack;
+  color:$primary-color;
+  background-color:$body-col;
+  margin: 0;
+}

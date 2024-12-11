@@ -7,10 +7,125 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>«Верстка финального макета»</title>
   </head>
   <body>
-    <img src="./img/webpack.svg" alt="Webpack Logo" width="200px" />
-    <h3>Welcome to Webpack 4 starter </h3>
+    <header class="header">
+      <div class="container">
+        <div class="header__icon">
+          <img src="/img/header/header__menu.svg" alt="menu">
+        </div>
+        <div class="header__logo">
+          <div class="header__logo-img">
+            <img src="/img/header/header__logo.svg" alt="">
+          </div>
+        </div>
+        <div class="header__mobile">
+          <div class="header__icon">
+            <a class="header__link" href="#">
+              <div class="icon__item">
+                <img src="/img/header/header__repair.svg" alt="">
+              </div>
+            </a>
+          </div>
+          <div class="header__icon">
+            <a class="header__link" href="#">
+              <div class="icon__item">
+                <img class="cps" src="/img/header/header__checkstatus.svg" alt="">
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="header__wrapper">
+          <div class="header__icon">
+            <img src="/img/header/hader__call.svg" alt="">
+          </div>
+          <div class="header__icon">
+            <img src="/img/header/header__chat.svg" alt="">
+          </div>
+          <div class="header__icon">
+            <img src="/img/header/header__profile.svg" alt="">
+          </div>
+          <div class="header__icon">
+            <a class="header__link" href="#">
+              <div class="icon__item">
+                <img src="/img/header/header__repair.svg" alt="">
+              </div>
+            </a>
+          </div>
+          <div class="header__icon">
+            <a class="header__link" href="#">
+              <div class="icon__item">
+                <img src="/img/header/header__checkstatus.svg" alt="">
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <article class="main__content">
+        <div class="title__wrapper">
+          <div class="main__img--line">
+            <img src="/img/main/highlight.svg" alt="">
+          </div>
+          <div class="main__title">
+            <h1 class="title">Услуги и сервисы</h1>
+          </div>
+          <div class="main__icon desctop">
+            <div class="icon__desctop">
+              <a class="link__desctop" href="#">
+                <div class="icon__text">Оставить заявку</div>
+                <div class="icon__item">
+                  <img src="/img/header/header__repair.svg" alt="">
+                </div>
+              </a>
+            </div>
+            <div class="icon__desctop">
+              <a class="link__desctop" href="#">
+                <div class="icon__text">Статус ремонта</div>
+                <div class="icon__item">
+                  <img src="/img/header/header__checkstatus.svg" alt="">
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-scroller">
+          <nav class="nav-scroller__items">
+            <a class="nav-scroller__item" href="#">Ремонтируемые устройства</a>
+            <a class="nav-scroller__item" href="#">Дополнительные услуги</a>
+            <a class="nav-scroller__item" href="#">Цены на услуги</a>
+            <a class="nav-scroller__item" href="#">Адреса сервисных центров</a>
+            <a class="nav-scroller__item" href="#">Специальные цены</a>
+          </nav>
+        </div>
+        <div class="main__wrapper">
+          <div class="main__text-content">
+            <div class="main__text">
+              <div class="text__information">
+                <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
+                  отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                  <br>
+                <p class="information">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span>, что подтверждает большое
+                  количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+                  очередь,советуют нас родным и близким.</span></p>
+              </div>
+            </div>
+            <div class="button">
+              <div class="button__img">
+                <img src="/img/main/main__expand.svg" alt="">
+              </div>
+              <div class="button__text">Читать далее</div>
+            </div>
+          </div>
+          <div class="main__img--cps">
+            <img src="/img/main/MG3223.svg" alt="">
+          </div>
+        </div>
+      </article>
+      <section class="menu">
+      </section>
+    </main>
   </body>
 </html>
