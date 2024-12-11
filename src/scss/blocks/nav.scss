@@ -1,0 +1,32 @@
+.nav-scroller{
+  box-sizing: border-box;
+  &__items {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    white-space: nowrap;
+    justify-content: space-between;
+    background-color: #F8F8F8;
+    padding-left: 24px;
+    padding-top: 24px;
+    &::-webkit-scrollbar{
+      display: none;
+    }
+  }
+  
+  .nav-scroller__item {
+    font-weight: 400;
+    color: #424242;
+    display: flex;
+    padding: 0.5rem 1.25rem;
+    text-decoration: none;
+    border: 1px solid transparent;
+  }
+  
+  .nav-scroller__item:hover {
+    border: 1px solid aquamarine;
+    border-radius: 5%;
+    background-color: #fff;
+    transition-duration: 0.5s;
+  }
+}
