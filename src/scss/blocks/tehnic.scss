@@ -1,0 +1,126 @@
+:root {
+  --tehnic-navigation-color: #{$swiper-navigation-color};
+  --tehnic-pagination-color: #{$swiper-pagination-color};
+  --tehnic-theme-color: #{$swiper-theme-color};
+  --tehnic-pagination-bullet-width: #{$swiper-pagination-bullet-width};
+  --tehnic-pagination-bullet-height: #{$swiper-pagination-bullet-height};
+  --tehnic-pagination-bullet-inactive-color: #{$swiper-pagination-bullet-inactive-color};
+}
+
+.tehnic {
+  margin-top: 24px;
+  @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+    margin-top: 32px;
+  }
+  @media (min-width: $breakpoint-desktop){
+    margin-top: 51px;
+  }
+  .tehnic__top {
+    padding: 16px;
+    border-top: 1px solid $line-col;
+    background: linear-gradient(to right, $body-col, $white-col);
+    @media (min-width: $breakpoint-tablet){
+      padding: 24px;
+    }
+  }
+  .tehnic__top .tehnic__title h1 {
+    font-size: 16px;
+    line-height: 24px;
+    color: $swiper-col;
+    align-self: center;
+    font-weight: 400;
+    margin:5px 0;
+  }
+  .tehnic .tehnic__item{
+    @media (min-width: $breakpoint-desktop){
+      justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1120px;
+    }
+  }
+  .tehnic__item .tehnic__cats-slider {
+    padding: 16px;
+    @media (min-width: $breakpoint-tablet){
+      padding: 24px;
+    }
+  }
+  .tehnic__item .tehnic-wrapper.open {
+    height: 100%;
+    overflow: visible;
+  }
+  
+  .tehnic-slide{
+    @media (min-width: $breakpoint-tablet){
+      margin-bottom: 0;
+    }
+  }
+  .tehnic-slide img {
+    display: block;
+    width: 240px;
+    height: 160px;
+    object-fit: cover;
+    @media (min-width: $breakpoint-tablet) and (max-width:$breakpoint-desktop){
+      width: 224px;
+    }
+    @media (min-width:$breakpoint-desktop){
+      width: 240px;
+    }
+  }
+  .tehnic__button {
+    display: none;
+    @media (min-width: $breakpoint-tablet){
+      display: flex;
+    background-color:$body-col;
+    margin-top: 24px;
+    vertical-align: middle;
+    border: 3px solid transparent;
+    }
+  }
+  
+  .tehnic__cats-slider .tehnic-wrapper {
+    padding-bottom: 22px;
+    @media (min-width: $breakpoint-tablet) and (max-width:$breakpoint-desktop){
+      display: grid;
+    grid-template-columns: 224px 224px 224px;
+    grid-template-rows: 160px 160px;
+    grid-row-gap: 16px;
+    grid-column-gap: 24px;
+    justify-content:  center;
+    padding-bottom: 0;
+    }
+    @media (min-width: $breakpoint-desktop){
+      display: grid;
+      grid-template-columns: 240px 240px 240px 240px;
+      grid-template-rows: 160px;
+      grid-row-gap: 16px;
+      grid-column-gap: 24px;
+      justify-content: center;
+      padding-bottom: 0;
+    }
+  }
+  @media (min-width: $breakpoint-tablet){
+    .tehnic-pagination {
+      display: none;
+    }
+    
+    .tehnic__item .tehnic-wrapper {
+      height: 160px;
+      overflow: hidden;
+  }
+
+  .tehnic__button-text{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-left: 8px;
+  }
+
+  .button2__text--open{
+    display:none;
+  }
+  }
+  .tehnic-pagination{
+    position: static;
+  }
+}

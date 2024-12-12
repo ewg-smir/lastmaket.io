@@ -14,7 +14,7 @@
     }
   }
   
-  .nav-scroller__item {
+  &__item {
     font-weight: 400;
     color: #424242;
     display: flex;
@@ -23,7 +23,7 @@
     border: 1px solid transparent;
   }
   
-  .nav-scroller__item:hover {
+  &__item:hover {
     border: 1px solid aquamarine;
     border-radius: 5%;
     background-color: #fff;

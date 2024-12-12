@@ -2,7 +2,7 @@
   background-color:$white-col;
   align-items: center;
   width: 100%;
-  @media (min-width:1366px){
+  @media (min-width:$breakpoint-desktop){
     display: none;
   }
 
@@ -15,7 +15,7 @@
     justify-content: space-between;
     padding: 0 16px;
 
-    @media (min-width: 768px) and (max-width: 1366px){
+    @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop){
       padding: 0;
     }
   }
@@ -24,19 +24,19 @@
     margin-bottom: 23px;
     margin-top: 24px;
 
-    @media (min-width: 768px) and (max-width: 1366px) {
+    @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
       margin-left: 24px;
     }
   }
 
   .header__icon:first-child {
-    @media (min-width: 768px) and (max-width: 1366px) {
+    @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
       margin-right: 10px;
     }
   }
 
   .header__icon:nth-child(3)::after{
-    @media (min-width: 768px) and (max-width:1366px){
+    @media (min-width: $breakpoint-tablet) and (max-width:$breakpoint-desktop){
       content: "";
       width: 2px;
       height: 32px;
@@ -50,7 +50,7 @@
   }
 
   .header__link {
-    color: #1b1c21;
+    color: $primary-color;
     text-decoration: none;
     font-weight: 500;
     font-size: 16px;
@@ -65,7 +65,7 @@
     margin-bottom: auto;
     margin-top: auto;
 
-    @media (min-width: 768px) and (max-width: 1366px) {
+    @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
       position: relative;
       margin-left: 20px;
       margin-bottom: auto;
@@ -74,7 +74,7 @@
   }
 
   .header__logo::after {
-    @media (min-width: 768px) and (max-width:1366px){
+    @media (min-width: $breakpoint-tablet) and (max-width:$breakpoint-desktop){
       content: '';
     width: 2px;
     height: 32px;
@@ -101,7 +101,7 @@
     padding-right: 32px;
     column-gap: 10px;
 
-    @media (min-width: 768px) and (max-width: 1366px) {
+    @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
       display: none;
     }
   }
@@ -112,7 +112,7 @@
 
   .header__wrapper {
     display: none;
-    @media (min-width: 768px) and (max-width: 1366px){
+    @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop){
       display: flex;
       position: relative;
       margin-left: auto;
@@ -121,13 +121,13 @@
   }
 
   .header__wrapper .header__icon:nth-child(2) {
-    @media (min-width: 768px) and (max-width: 1366px) {
+    @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
       margin-right: 10px;
     }
   }
 
   .header__wrapper .header__icon:nth-child(3) {
-    @media (min-width: 768px) and (max-width: 1366px) {
+    @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
       margin-right: 10px;
     }
   }

@@ -1,0 +1,120 @@
+.services{
+  .services__title-wrapper {
+    display: flex;
+    @media (min-width: $breakpoint-desktop) {
+      margin-bottom: 8px;
+    }
+  }
+  .services__img {
+    display: flex;
+    width: 4px;
+    height: 40px;
+    margin-top: 20px;
+  }
+  .services__heading {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    margin-top: 24px;
+    align-self: center;
+    padding-left: 24px;
+  }
+  .services__wrapper {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media (min-width: $breakpoint-tablet){
+    flex-wrap: nowrap;
+    }
+  }
+  
+  .services__text-content {
+    width: 100%;
+    padding-right: 20px;
+
+    @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+      width: 50%;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+      width: 50%;
+    }
+  }
+  .services__text-information {
+    padding-left: 24px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 32px;
+  }
+  .services__information {
+    display: none;
+    @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+      display: inline-block;
+    }
+    @media (min-width: $breakpoint-desktop) {
+      display: inline-block;
+    }
+  }
+  .services__desctop {
+    display: none;
+    @media (min-width: $breakpoint-desktop) {
+      display: flex;
+      margin-left: auto;
+      margin-top: auto;
+      margin-right: 32px;
+      margin-bottom: auto;
+    }
+  }
+  .services__link{
+    display: none;
+    @media (min-width: $breakpoint-desktop){
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+  }
+  .services__link-text{
+    display: none;
+    @media (min-width: $breakpoint-desktop) {
+      display: flex;
+      color: $primary-color;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 500;
+      margin-right: 5px;
+      margin-left: 24px;
+    }
+  }
+  .services__img--cps {
+    margin-top: 25px;
+    width: 100%;
+    @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+      width: 50%;
+    }
+    @media (min-width: $breakpoint-desktop) {
+      width: 50%;
+    }
+  }
+
+  .services__img--cps img {
+    width: 100%;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .services__button {
+    display: flex;
+    padding-left: 25px;
+  }
+
+  .services__button-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
