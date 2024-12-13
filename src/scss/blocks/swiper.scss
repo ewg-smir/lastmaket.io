@@ -12,14 +12,14 @@
   @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
     margin-top: 32px;
   }
-  @media (min-width: $breakpoint-desktop){
+  @media (min-width: $breakpoint-desktop) {
     margin-top: 51px;
   }
   .swiper__top {
     padding: 16px;
     border-top: 1px solid $line-col;
     background: linear-gradient(to right, $body-col, $white-col);
-    @media (min-width: $breakpoint-tablet){
+    @media (min-width: $breakpoint-tablet) {
       padding: 24px;
     }
   }
@@ -29,19 +29,19 @@
     color: $swiper-col;
     align-self: center;
     font-weight: 400;
-    margin:5px 0;
+    margin: 5px 0;
   }
-  .swiper .swiper__item{
-    @media (min-width: $breakpoint-desktop){
+  .swiper .swiper__item {
+    @media (min-width: $breakpoint-desktop) {
       justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1120px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1440px;
     }
   }
   .swiper__item .swiper__cats-slider {
     padding: 16px;
-    @media (min-width: $breakpoint-tablet){
+    @media (min-width: $breakpoint-tablet) {
       padding: 24px;
     }
   }
@@ -49,9 +49,9 @@
     height: 100%;
     overflow: visible;
   }
-  
-  .swiper-slide{
-    @media (min-width: $breakpoint-tablet){
+
+  .swiper-slide {
+    @media (min-width: $breakpoint-tablet) {
       margin-bottom: 0;
     }
   }
@@ -60,36 +60,36 @@
     width: 240px;
     height: 72px;
     object-fit: cover;
-    @media (min-width: $breakpoint-tablet) and (max-width:$breakpoint-desktop){
+    @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
       width: 224px;
     }
-    @media (min-width:$breakpoint-desktop){
+    @media (min-width: $breakpoint-desktop) {
       width: 240px;
-    } 
+    }
   }
   .swiper__button {
     display: none;
-    @media (min-width: $breakpoint-tablet){
+    @media (min-width: $breakpoint-tablet) {
       display: flex;
-    background-color:$body-col;
-    margin-top: 24px;
-    vertical-align: middle;
-    border: 3px solid transparent;
+      background-color: $body-col;
+      margin-top: 24px;
+      vertical-align: middle;
+      border: 3px solid transparent;
     }
   }
-  
+
   .swiper__cats-slider .swiper-wrapper {
     padding-bottom: 22px;
-    @media (min-width: $breakpoint-tablet) and (max-width:$breakpoint-desktop){
+    @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
       display: grid;
-    grid-template-columns: 224px 224px 224px;
-    grid-template-rows: 72px 72px;
-    grid-row-gap: 16px;
-    grid-column-gap: 24px;
-    justify-content:  center;
-    padding-bottom: 0;
+      grid-template-columns: 224px 224px 224px;
+      grid-template-rows: 72px 72px;
+      grid-row-gap: 16px;
+      grid-column-gap: 24px;
+      justify-content: center;
+      padding-bottom: 0;
     }
-    @media (min-width: $breakpoint-desktop){
+    @media (min-width: $breakpoint-desktop) {
       display: grid;
       grid-template-columns: 240px 240px 240px 240px;
       grid-template-rows: 72px 72px;
@@ -99,23 +99,21 @@
       padding-bottom: 0;
     }
   }
-  @media (min-width: $breakpoint-tablet){
-
-    
+  @media (min-width: $breakpoint-tablet) {
     .swiper__item .swiper-wrapper {
       height: 160px;
       overflow: hidden;
-  }
+    }
 
-  .swiper__button-text{
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 500;
-    margin-left: 8px;
-  }
+    .swiper__button-text {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 500;
+      margin-left: 8px;
+    }
 
-  .button__text--open{
-    display:none;
-  }
+    .button__text--open {
+      display: none;
+    }
   }
 }

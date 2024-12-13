@@ -8,7 +8,7 @@ new Swiper('.swiper__cats-slider', {
     320: {
       enabled: true,
       slidesPerView: 1.15,
-      spaceBetween: 16,
+      spaceBetween: 1,
       width:326,
     },
     768: {
