@@ -1,0 +1,24 @@
+.footer{
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 16px;
+  color: $swiper-col;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 19px;
+  border-top: 1px solid $line-col;
+  text-align: center;
+  @media (min-width: $breakpoint-tablet){
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    padding: 32px 24px 25px 24px;
+    justify-content: space-between;
+    p:first-child{
+      text-align: left;
+    }
+    p:last-child{
+      text-align: right;
+    }
+  }
+}

@@ -48,6 +48,15 @@
     line-height: 18px;
     margin-top: 32px;
   }
+  .services__information span{
+    display: none;
+    @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+      display: none;
+    }
+    @media (min-width: $breakpoint-desktop) {
+      display: inline-block;
+    }
+  }
   .services__information {
     display: none;
     @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
@@ -110,6 +119,7 @@
   .services__button {
     display: flex;
     padding-left: 25px;
+    align-items: center;
   }
 
   .services__button-text {

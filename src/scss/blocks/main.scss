@@ -1,9 +1,12 @@
 
 .main {
   align-items: center;
+  box-sizing: border-box;
   @media (min-width: $breakpoint-desktop) {
-    justify-content: center;
-    margin: 0 auto;
+    justify-content: right;
+    margin-left:auto;
+    max-width: 1120px;
+
   }
   img {
     max-width: 100%;

@@ -4,3 +4,8 @@ body{
   background-color:$body-col;
   margin: 0;
 }
+a:-webkit-any-link {
+  color: $primary-color;
+  cursor: pointer;
+  text-decoration: none;
+}

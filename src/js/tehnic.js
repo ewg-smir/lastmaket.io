@@ -23,7 +23,7 @@ var buttonTextOpen = document.querySelector('.button2__text--open');
 var buttonTextClose = document.querySelector('.button2__text--close');
 var tehnicWrapper = document.querySelector('.tehnic-wrapper');
 button.addEventListener('click', function () {
-  tehnicWrapper.classList.toggle('open');
+  tehnicWrapper.classList.toggle('open');   
   if (buttonTextClose.style.display == "none") {
     
     buttonTextClose.style.display = "block";
