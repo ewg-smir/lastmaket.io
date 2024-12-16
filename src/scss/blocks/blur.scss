@@ -1,0 +1,18 @@
+.menu__blur{
+  display: none;
+  @media (min-width:$breakpoint-tablet) and (max-width: $breakpoint-desktop){
+    
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: $white-col;
+    opacity: 0.96;
+    z-index: 1;
+  }
+  @media (min-width:$breakpoint-desktop){
+    display: none;
+  }
+}

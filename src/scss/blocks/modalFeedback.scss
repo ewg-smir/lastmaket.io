@@ -1,0 +1,87 @@
+.modalFeedback{
+  display: none;
+  
+  @media (min-width:$breakpoint-desktop){
+    
+
+    display: none;
+    max-width: 440px;
+    border-left:1px solid $line-col;
+    margin-left: auto;
+  }
+  .modalFeedback__wrapper{
+    z-index: 4;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: $white-col;
+    padding: 24px 16px;
+    @media (min-width:$breakpoint-desktop){
+      padding-top: 0;
+    }
+  }
+  .modalFeedback__title-wrapper{
+    position: relative;
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 24px;
+  }
+  .modalFeedback__line{
+    position: absolute;
+    left: -16px;
+    align-self: center;
+    @media (min-width:$breakpoint-desktop){
+      // &::before{
+      //   content: url('/src/img/menu/burger.svg');
+      //   position: absolute;
+      //   right: 32px;
+      // }
+    }
+  }
+  .modalFeedback__title{
+    align-self: center;
+  }
+  .modalFeedback__title p{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+  }
+  .modalFeedback__input-list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  .modalFeedback__input-list li{
+    margin-bottom: 16px;
+  }
+  .modalFeedback__input-list li input{
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid $head-col;
+    height: 48px;
+    width: 100%;
+    display: block;
+  }
+  .modalFeedback__information{
+    margin-bottom: 19px;
+  }
+  .modalFeedback__information p{
+    margin: 0;
+  }
+  .modalFeedback__information p span{
+    color: $rose-col;
+  }
+  .modalFeedback__icon.send {
+    margin-left: auto;
+  }
+  .modalFeedback__icon.closer{
+    @media (min-width:$breakpoint-desktop){
+      position: absolute;
+      right: 470px;
+        top: 35px;
+    }
+  }
+}

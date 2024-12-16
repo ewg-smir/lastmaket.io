@@ -1,26 +1,45 @@
 .menu{
   display: none;
-  box-shadow: 16px 0px 40px 8px $shadow-col;
   background-color: $white-col;
-
-  @media (min-width:$breakpoint-desktop){
   position: fixed;
+  // width: 320px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 3;
+  padding: 16px 19px 16px 32px;
+  box-sizing: border-box;
+  color: $primary-color;
+  justify-content: space-between;
+  flex-direction: column;
+  
+  @media (min-width:$breakpoint-tablet) and (max-width: $breakpoint-desktop){
+    box-shadow: 16px 0px 40px 8px $shadow-col;
+    width: 320px;
+  }
+  @media (min-width:$breakpoint-desktop){
+  // position: fixed;
   left:calc(50% - 720px);
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    // flex-direction: column;
+    // justify-content: space-between;
     width: 320px;
     padding: 23px 24px 32px 24px;
-    color: $primary-color;
+    // color: $primary-color;
     text-decoration: none;
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
     box-shadow:none;
     height: 100vh;
-    box-sizing: border-box;
+    // box-sizing: border-box;
+    overflow: auto;
   }
 
+  a{
+    color: $primary-color;
+  }
   .menu__top{
     display: flex;
     margin-bottom: 46px;
@@ -45,6 +64,7 @@
   .menu__item-list{
     margin: 0;
     padding: 0;
+    padding-bottom: 32px;
     list-style-type: none;
   }
   .menu__item-list li{
@@ -55,22 +75,25 @@
     padding-bottom: 0;
   }
   .menu__item-list li::before{
-    content:url('/lastmaket.io/block7/src/img/menu/highlight.svg');
+    content:url('/src/img/menu/highlight.svg');
     position: absolute;
     left: -24px;
+    top: -6px;
     opacity: 0;
   }
-  .menu__item-list li:hover{
-    color: #7E7E82;
+  .menu__item-list li a:hover{
+    color:$swiper-col;
     transition: all 1s ease;
   }
   .menu__item-list li:hover::before{
-    content:url('/lastmaket.io/block7/src/img/menu/highlight.svg');
+    content:url('/src/img/menu/highlight.svg');
     position: absolute;
     left: -24px;
+    top: -6px;
     opacity: 1;
     transition: all 1s ease;
   }
+  
   .menu__bottom-icon{
     display: flex;
   }
@@ -103,7 +126,10 @@
   .menu__leng ul li{
     padding-right: 7px;
   }
-  .menu__leng ul li:hover{
-    color: #7E7E82;
+  .menu__leng ul li a:hover{
+    color: $swiper-col;
+  }
+  .menu-close{
+    display: none;
   }
 }

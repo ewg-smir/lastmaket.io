@@ -6,12 +6,12 @@ var buttonImg = servicesButton.querySelector('.services__button-img');
 var servicesButtonText = servicesButton.querySelector('.services__button-text');
 var informationDesctop = servicesText.querySelector('.services__information-desctop');
 
+
 let isEventAdded = false;
 
-function services() {
+export function services() {
   if (!isEventAdded) {
     isEventAdded = true;
-
     servicesButton.addEventListener('click', function () {
       const isMobile = window.innerWidth < 768;
       const isTablet = window.innerWidth >= 768 && window.innerWidth < 1440;
@@ -70,6 +70,4 @@ function resetDisplay(states, buttonText, iconTransform) {
 }
 
 services();
-window.addEventListener("resize", () => {
-  services();
-});
+

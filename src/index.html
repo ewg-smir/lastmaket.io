@@ -13,11 +13,11 @@
     />
     <title>«Верстка финального макета»</title>
   </head>
-  <body>
+  <body class="body">
     <div class="content">
     <header class="header">
       <div class="container">
-        <div class="header__icon">
+        <div class="header__icon burger">
           <img src="/img/header/header__menu.svg" alt="menu" />
         </div>
         <div class="header__logo">
@@ -53,7 +53,7 @@
           <div class="header__icon">
             <img src="/img/header/hader__call.svg" alt="" />
           </div>
-          <div class="header__icon">
+          <div class="header__icon chat">
             <img src="/img/header/header__chat.svg" alt="" />
           </div>
           <div class="header__icon">
@@ -80,11 +80,11 @@
         </div>
       </div>
     </header>
-    
-      <aside class="menu">
+      <aside class="menu menu-open">
+        <div class="menu__case">
         <div class="menu__wrapper">
       <div class="menu__top">
-        <div class="menu__icon">
+        <div class="menu__icon closer">
           <img src="img/menu/burger.svg" alt="">
         </div>
         <div class="menu__logo">
@@ -96,23 +96,24 @@
       </div>
       <div class="menu__item">
         <ul class="menu__item-list">
-          <li><a href="">Ремонт техники</a></li>
-          <li><a href="">Услуги и сервисы</a></li>
-          <li><a href="">Корпоративным клиентам</a></li>
-          <li><a href="">Продавцам техники</a></li>
-          <li><a href="">Партнерам</a></li>
-          <li><a href="">Производителям</a></li>
-          <li><a href="">Наши сервисные центры</a></li>
-          <li><a href="">Контакты</a></li>
+          <li><a href="#">Ремонт техники</a></li>
+          <li><a href="#">Услуги и сервисы</a></li>
+          <li><a href="#">Корпоративным клиентам</a></li>
+          <li><a href="#">Продавцам техники</a></li>
+          <li><a href="#">Партнерам</a></li>
+          <li><a href="#">Производителям</a></li>
+          <li><a href="#">Наши сервисные центры</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
       </div>
     </div>
+  </div>
       <div class="menu__bottom">
         <div class="menu__bottom-icon">
           <div class="menu__icon">
             <img src="img/menu/hader__call.svg" alt="">
           </div>
-          <div class="menu__icon">
+          <div class="menu__icon chat">
             <img src="img/menu/header__chat.svg" alt="">
           </div>
           <div class="menu__icon">
@@ -128,13 +129,40 @@
           </div>
           <div class="menu__leng">
             <ul>
-              <li><a href="">RU</a></li>
-              <li><a href="">EN</a></li>
-              <li><a href="">CH</a></li>
+              <li><a href="#">RU</a></li>
+              <li><a href="#">EN</a></li>
+              <li><a href="#">CH</a></li>
             </ul>
           </div>
         </div>
       </div>
+    </div>
+      </aside>
+      <aside class="modalFeedback modalFeedback-open">
+        <div class="modalFeedback__wrapper modalFeedback__wrapper-open">
+        <div class="modalFeedback__icon closer">
+          <img src="img/menu/burger.svg" alt="">
+        </div>
+        <div class="modalFeedback__title-wrapper">
+        <div class="modalFeedback__line">
+          <img src="/img/main/highlight.svg" alt="" />
+        </div>
+        <div class="modalFeedback__title"><p>Обратная связь</p></div>
+      </div>
+        <ul class="modalFeedback__input-list">
+          <li><input  type="text" class="modalFeedback__input" placeholder="Имя"></li>
+          <li><input  type="number" class="modalFeedback__input" placeholder="Телефон"></li>
+          <li><input  type="email" class="modalFeedback__input" placeholder="Электронная почта"></li>
+          <li><input  type="text" class="modalFeedback__input" placeholder="Сообщение"></li>
+        </ul>
+        <div class="modalFeedback__information"><p>Нажимая “отправить”, вы даете согласие на <span>обработку персональных данных</span> и соглашаетесь с нашей <span>политикой конфиденциальности</span></p></div>
+        <div class="modalFeedback__icon send">
+          <img src="img/modalFeedback/sendButton.svg" alt="">
+        </div>
+      </div>
+      </aside>
+      <aside class="modalCall">
+
       </aside>
       <main class="main">
       <section class="services">
@@ -406,6 +434,7 @@
       </div>
     </footer>
   </div>
+  <div class="menu__blur"></div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  </body>
+</body>
 </html>

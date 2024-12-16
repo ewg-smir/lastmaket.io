@@ -7,9 +7,10 @@
   align-items: center;
   margin-top: 40px;
   margin-bottom: 19px;
+  box-sizing: border-box;
   border-top: 1px solid $line-col;
   text-align: center;
-  @media (min-width: $breakpoint-tablet){
+  @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop){
     display: grid;
     grid-template-columns:repeat(3,1fr) ;
     padding: 32px 24px 25px 24px;
@@ -20,5 +21,19 @@
     p:last-child{
       text-align: right;
     }
+  }
+  @media (min-width: $breakpoint-desktop){
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    padding: 32px 24px 25px 24px;
+    justify-content: space-between;
+    p:first-child{
+      text-align: left;
+    }
+    p:last-child{
+      text-align: right;
+    }
+  max-width: 1120px;
+  margin-left: auto;
   }
 }
