@@ -1104,7 +1104,7 @@ a:-webkit-any-link {
   .menu .menu__item-list li:last-child {
     padding-bottom: 0; }
   .menu .menu__item-list li::before {
-    content: url("/src/img/menu/highlight.svg");
+    content: url("/img/menu/highlight.svg");
     position: absolute;
     left: -24px;
     top: -6px;
@@ -1113,7 +1113,7 @@ a:-webkit-any-link {
     color: #7E7E82;
     transition: all 1s ease; }
   .menu .menu__item-list li:hover::before {
-    content: url("/src/img/menu/highlight.svg");
+    content: url("/img/menu/highlight.svg");
     position: absolute;
     left: -24px;
     top: -6px;
