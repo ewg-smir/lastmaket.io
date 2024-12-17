@@ -160,7 +160,10 @@ bottom: 16px;
       margin-top: 0;
     }
   }
-
+  .price__button:hover, .price__button:active, .price__button:focus{
+    opacity: 0.7; 
+    transition: opacity 0.3s;
+  }
 
   .price-pagination {
     position: static;

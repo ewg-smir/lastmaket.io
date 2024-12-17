@@ -23,7 +23,7 @@
     border: 1px solid transparent;
   }
   
-  &__item:hover {
+  &__item:hover, &__item:first-child {
     border: 1px solid aquamarine;
     border-radius: 5%;
     background-color: #fff;

@@ -1,0 +1,108 @@
+.modalCall{
+  position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    border-left:1px solid $line-col;
+    margin-left: auto;
+  display: none;
+  background-color: $white-col;
+  box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2), -2px 0 4px 0 rgba(69, 79, 126, 0.02);
+  @media (min-width:$breakpoint-desktop){
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    width: 440px;
+    height: 100vh;
+    border-left:1px solid $line-col;
+    margin-left: auto;
+  }
+  .modalCall__wrapper{
+    z-index: 4;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: $white-col;
+    padding: 24px 16px;
+    @media (min-width:$breakpoint-desktop){
+      padding-top: 0;
+      position: static;
+    }
+  }
+  .modalCall__title-wrapper{
+    position: relative;
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 24px;
+  }
+  .modalCall__line{
+    position: absolute;
+    left: -16px;
+    align-self: center;
+    @media (min-width:$breakpoint-desktop){
+      // &::before{
+      //   content: url('/src/img/menu/burger.svg');
+      //   position: absolute;
+      //   right: 32px;
+      // }
+    }
+  }
+  .modalCall__title{
+    align-self: center;
+  }
+  .modalCall__title p{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+  }
+  .modalCall__input-list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  .modalCall__input-list li{
+    margin-bottom: 16px;
+  }
+  .modalCall__input-list li input{
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid $head-col;
+    height: 48px;
+    width: 100%;
+    display: block;
+    padding-left: 16px;
+  }
+  .modalCall__input-list li input:hover, .modalCall__input-list li input:active, .modalCall__input-list li input:focus{
+    opacity: 0.7; 
+    transition: opacity 0.3s;
+  }
+  .modalCall__information{
+    margin-bottom: 19px;
+  }
+  .modalCall__information p{
+    margin: 0;
+  }
+  .modalCall__information p span{
+    color: $rose-col;
+  }
+  .modalCall__icon.send {
+    margin-left: auto;
+  }
+  .modalCall__icon.closer{
+    @media (min-width:$breakpoint-desktop){
+      position: absolute;
+      right: 470px;
+        top: 35px;
+    }
+  }
+  .modalCall__icon:hover, .modalCall__icon:active, .modalCall__icon:focus{
+    opacity: 0.7; 
+    transition: opacity 0.3s;
+  }
+}

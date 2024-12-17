@@ -28,7 +28,10 @@
       margin-left: 24px;
     }
   }
-
+  .header__icon:hover, .header__icon:active, .header__icon:focus{
+    opacity: 0.7; 
+    transition: opacity 0.3s;
+  }
   .header__icon:first-child {
     @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
       margin-right: 10px;
