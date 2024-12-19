@@ -26,6 +26,7 @@ export function menus() {
     });
   }
   else if (window.innerWidth >= 768 && window.innerWidth < 1440) {
+    blurr.style.zIndex = "2";
     if (menu.style.display === "flex") {
       blurr.style.display = "block";
       body.style.overflow = "hidden";
@@ -49,6 +50,7 @@ export function menus() {
       if(window.innerWidth>=1440 || window.innerWidth<768){
         return;
       }
+
       menu.style.display = "none";
       body.style.overflow = "";
       blurr.style.display = "";
@@ -57,6 +59,7 @@ export function menus() {
   }
   else if (window.innerWidth >= 1440) {
     menu.style.display = "flex";
+    
     body.style.overflow = "auto";
     blurr.style.display = "";
   }

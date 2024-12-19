@@ -17,4 +17,5 @@ window.addEventListener("resize", () => {
   feedback();
   closeMenu();
   feedCall();
+  
 });

@@ -71,7 +71,11 @@ export function feedCall() {
     menu.style.display = "flex";
     body.style.overflow = "auto";
     blurr.style.display = "none";
+
     call.addEventListener('click',function(){
+      if(window.innerWidth<1440){
+        return;
+      }
       body.style.overflow = "hidden";
       blurr.style.display = "block";
       blurr.style.zIndex = "6";
@@ -82,6 +86,9 @@ export function feedCall() {
       modalCall.classList.toggle('modalCall-close');
     });
     closer.addEventListener('click',function(){
+      if(window.innerWidth<1440){
+        return;
+      }
       blurr.style.display = "none";
       menu.style.display = "flex";
       container.style.display = "flex";
@@ -92,6 +99,9 @@ export function feedCall() {
       modalCall.classList.toggle('modalCall-close');
     });
     blurr.addEventListener('click', function () {
+      if(window.innerWidth<1440){
+        return;
+      }
       modalCall.style.display = "none";
       body.style.overflow = "";
       blurr.style.display = "none";
