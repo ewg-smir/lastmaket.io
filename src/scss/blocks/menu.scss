@@ -75,7 +75,7 @@
     padding-bottom: 0;
   }
   .menu__item-list li::before{
-    content:url('/src/img/menu/highlight.svg');
+    content:url('/img/menu/highlight.svg');
     position: absolute;
     left: -24px;
     top: -6px;
@@ -86,7 +86,7 @@
     transition: all 1s ease;
   }
   .menu__item-list li:hover::before{
-    content:url('/src/img/menu/highlight.svg');
+    content:url('/img/menu/highlight.svg');
     position: absolute;
     left: -24px;
     top: -6px;

@@ -37,12 +37,18 @@ export function menus() {
       body.style.overflow = "hidden";
     });
     closer.addEventListener('click', function () {
+      if(window.innerWidth>=1440 || window.innerWidth<768){
+        return;
+      }
       menu.style.display = "none";
       body.style.overflow = "";
       blurr.style.display = "";
       menu.classList.toggle('menu-close');
     });
     blurr.addEventListener('click', function () {
+      if(window.innerWidth>=1440 || window.innerWidth<768){
+        return;
+      }
       menu.style.display = "none";
       body.style.overflow = "";
       blurr.style.display = "";

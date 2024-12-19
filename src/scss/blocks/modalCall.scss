@@ -11,7 +11,7 @@
   background-color: $white-col;
   box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2), -2px 0 4px 0 rgba(69, 79, 126, 0.02);
   @media (min-width:$breakpoint-desktop){
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     display: none;
@@ -19,6 +19,7 @@
     height: 100vh;
     border-left:1px solid $line-col;
     margin-left: auto;
+    
   }
   .modalCall__wrapper{
     z-index: 4;
@@ -31,7 +32,9 @@
     padding: 24px 16px;
     @media (min-width:$breakpoint-desktop){
       padding-top: 0;
-      position: static;
+      position: fixed;
+      width: 440px;
+      
     }
   }
   .modalCall__title-wrapper{

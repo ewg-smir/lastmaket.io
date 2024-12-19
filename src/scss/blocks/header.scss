@@ -25,19 +25,37 @@
     margin-top: 24px;
 
     @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
-      margin-left: 24px;
+      margin-left: 16px;
     }
   }
   .header__icon:hover, .header__icon:active, .header__icon:focus{
     opacity: 0.7; 
     transition: opacity 0.3s;
   }
-  .header__icon:first-child {
+
+  .header__icon:nth-child(4) {
     @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
-      margin-right: 10px;
+      margin-right: 16px;
+      margin-left: 20px;
     }
   }
-
+  .header__icon:nth-child(5) {
+    @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+      margin-right: 16px;
+    }
+  }
+  .header__icon:last-child {
+    @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  .header__wrapper .header__icon:nth-child(3) {
+    @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+      margin-right: 20px;
+      margin-left: 16px;
+    }
+  }
   .header__icon:nth-child(3)::after{
     @media (min-width: $breakpoint-tablet) and (max-width:$breakpoint-desktop){
       content: "";
@@ -47,8 +65,8 @@
       position: absolute;
       z-index: 20;
       top: 50%;
-      transform: translateY(-50%);
-      right: 160px;
+      transform: translateY(-50%) ;
+      right: 140px;
     }
   }
 
@@ -119,21 +137,11 @@
       display: flex;
       position: relative;
       margin-left: auto;
-      padding-right: 40px;
+      padding-right: 24px;
     }
   }
 
-  .header__wrapper .header__icon:nth-child(2) {
-    @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
-      margin-right: 10px;
-    }
-  }
 
-  .header__wrapper .header__icon:nth-child(3) {
-    @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
-      margin-right: 10px;
-    }
-  }
 
   a {
     display: flex;

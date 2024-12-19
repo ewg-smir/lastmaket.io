@@ -45,12 +45,34 @@
       padding: 24px;
     }
   }
-  .swiper__item .swiper-wrapper.open {
+  .swiper__item .swiper-wrapper.cat.open {
     height: 100%;
     overflow: visible;
   }
-
-  .swiper-slide {
+  .swiper-slide.cat.hidden {
+    @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop){
+    display: none; /* Изначально скрытые элементы */
+  }
+  @media (min-width: $breakpoint-desktop){
+    display: block;
+  }
+}
+  .swiper-slide.cat.hidden.close {
+    @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop){
+    display: none; /* Изначально скрытые элементы */
+  }
+  @media (min-width: $breakpoint-desktop){
+    display: none;
+  }
+}
+  .swiper-slide.cat.visible {
+    display: block; /* Показать скрытые элементы */
+  }
+  .swiper-slide.cat.close.visible {
+    display: block; /* Показать скрытые элементы */
+  }
+  .swiper-slide.cat {
+    box-sizing: border-box;
     @media (min-width: $breakpoint-tablet) {
       margin-bottom: 0;
     }
@@ -60,12 +82,13 @@
     transition: opacity 0.3s;
   }
   .swiper-slide img {
-    display: block;
-    width: 240px;
-    height: 72px;
+    width: 100%; /* Изображение занимает всю ширину контейнера */
+    height: auto; /* Сохраняет пропорции */
+    display: block; 
     object-fit: cover;
+    
     @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
-      width: 224px;
+      min-width: 224px;
     }
     @media (min-width: $breakpoint-desktop) {
       width: 240px;
@@ -85,12 +108,12 @@
     opacity: 0.7; 
     transition: opacity 0.3s;
   }
-  .swiper__cats-slider .swiper-wrapper {
+  .swiper__cats-slider .swiper-wrapper.cat {
     padding-bottom: 22px;
     @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
       display: grid;
-      grid-template-columns: 224px 224px 224px;
-      grid-template-rows: 72px 72px;
+      grid-template-columns:repeat(3,1fr);
+      // grid-template-rows: 72px 72px;
       grid-row-gap: 16px;
       grid-column-gap: 24px;
       justify-content: center;
@@ -108,7 +131,7 @@
   }
   @media (min-width: $breakpoint-tablet) {
     .swiper__item .swiper-wrapper {
-      height: 160px;
+      max-height: 50%;
       overflow: hidden;
     }
 

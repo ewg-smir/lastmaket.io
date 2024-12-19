@@ -10,6 +10,9 @@ var body = document.querySelector('.body');
 export function feedCall() {
   if ( window.innerWidth< 768) {
     call.addEventListener('click',function(){
+      if(window.innerWidth>=768){
+        return;
+      }
       menu.style.display = "none";
       modalCall.style.display = "flex";
       body.style.overflow = "hidden";
@@ -24,6 +27,9 @@ export function feedCall() {
   }
   else if (window.innerWidth >= 768 && window.innerWidth < 1440) {
     call2.addEventListener('click',function(){
+      if(window.innerWidth>=1440 || window.innerWidth<768){
+        return;
+      }
       menu.style.display = "none";
       modalCall.style.display = "flex";
       body.style.overflow = "hidden";
@@ -31,6 +37,9 @@ export function feedCall() {
       modalCall.classList.toggle('modalCall-close');
     });
     call.addEventListener('click',function(){
+      if(window.innerWidth>=1440 || window.innerWidth<768){
+        return;
+      }
       menu.style.display = "none";
       blurr.style.display = "none";
       modalCall.style.display = "flex";
@@ -39,12 +48,18 @@ export function feedCall() {
       modalCall.classList.toggle('modalCall-close');
     });
     blurr.addEventListener('click',function(){
+      if(window.innerWidth>=1440 || window.innerWidth<768){
+        return;
+      }
       menu.style.display = "none";
       body.style.overflow = "";
       blurr.style.display = "";
       modalCall.classList.toggle('modalCall-close');
     });
     closer.addEventListener('click',function(){
+      if(window.innerWidth>=1440 || window.innerWidth<768){
+        return;
+      }
       menu.style.display = "none";
       container.style.display = "flex";
       body.style.overflow = "auto";

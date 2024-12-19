@@ -51,21 +51,44 @@
   }
   
   .tehnic-slide{
+    box-sizing: border-box;
     @media (min-width: $breakpoint-tablet){
       margin-bottom: 0;
     }
+  }
+  .tehnic-slide.hidden {
+    @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop){
+    display: none; /* Изначально скрытые элементы */
+  }
+  @media (min-width: $breakpoint-desktop){
+    display: block;
+  }
+}
+  .tehnic-slide.hidden.close {
+    @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop){
+    display: none; /* Изначально скрытые элементы */
+  }
+  @media (min-width: $breakpoint-desktop){
+    display: none;
+  }
+}
+  .tehnic-slide.visible {
+    display: block; /* Показать скрытые элементы */
+  }
+  .tehnic-slide.close.visible {
+    display: block; /* Показать скрытые элементы */
   }
   .tehnic-slide:hover, .tehnic-slide:active, .tehnic-slide:focus{
     opacity: 0.7; 
     transition: opacity 0.3s;
   }
   .tehnic-slide img {
-    display: block;
-    width: 240px;
-    height: 160px;
+    width: 100%; /* Изображение занимает всю ширину контейнера */
+    height: auto; /* Сохраняет пропорции */
+    display: block; 
     object-fit: cover;
     @media (min-width: $breakpoint-tablet) and (max-width:$breakpoint-desktop){
-      width: 224px;
+      min-width: 224px;
     }
     @media (min-width:$breakpoint-desktop){
       width: 240px;
@@ -89,8 +112,8 @@
     padding-bottom: 22px;
     @media (min-width: $breakpoint-tablet) and (max-width:$breakpoint-desktop){
       display: grid;
-    grid-template-columns: 224px 224px 224px;
-    grid-template-rows: 160px 160px;
+      grid-template-columns:repeat(3,1fr);
+    // grid-template-rows: 160px 160px;
     grid-row-gap: 16px;
     grid-column-gap: 24px;
     justify-content:  center;
@@ -98,8 +121,8 @@
     }
     @media (min-width: $breakpoint-desktop){
       display: grid;
-      grid-template-columns: 240px 240px 240px 240px;
-      grid-template-rows: 160px;
+      grid-template-columns:repeat(4,1fr);
+      // grid-template-rows: 160px;
       grid-row-gap: 16px;
       grid-column-gap: 24px;
       justify-content: center;
@@ -112,7 +135,7 @@
     }
     
     .tehnic__item .tehnic-wrapper {
-      height: 160px;
+      // height: 160px;
       overflow: hidden;
   }
 
