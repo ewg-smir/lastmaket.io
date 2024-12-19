@@ -385,7 +385,7 @@ a:-webkit-any-link {
       height: 32px;
       background-color: #EAEAEA;
       position: absolute;
-      z-index: 20;
+      z-index: 1;
       top: 50%;
       transform: translateY(-50%);
       right: 140px; } }
@@ -414,7 +414,7 @@ a:-webkit-any-link {
     height: 32px;
     background-color: #EAEAEA;
     position: absolute;
-    z-index: 20;
+    z-index: 1;
     top: 50%;
     transform: translateY(-50%);
     right: -13px; }
@@ -425,7 +425,7 @@ a:-webkit-any-link {
         height: 32px;
         background-color: #EAEAEA;
         position: absolute;
-        z-index: 20;
+        z-index: 1;
         top: 50%;
         transform: translateY(-50%);
         right: 110px; } }
